@@ -18,7 +18,7 @@ end
 def directors_totals(nds)
   result = {}
   nds.each do |director|
-    pp result["Stephen Spielberg"] = gross_for_director(director)
+    pp result[director[:name]] = gross_for_director(director)
   end
 
   pp result
