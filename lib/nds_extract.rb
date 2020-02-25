@@ -17,7 +17,7 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
   result = {}
-
+pp directors_database
   nds.each do |director|
     result[:name] = gross_for_director(director)
   end
